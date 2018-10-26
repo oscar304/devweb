@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+	<h2>Creando Formularios</h2>
+	<form class="formulario" action="" id="">
+		<fieldset>
+			<legend>Tus datos</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="Nombre" placeholder="Tu Nombre" autocomplete="on" required="">
+			<br>
+			<br>
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="Nombre" placeholder="Tu Apellido" autocomplete="on" required="">
+			<br>
+			<br>
+			<label for="sexo">Sexo</label><br>
+			<input type="radio" id="sexo" name="Sexo" value="hombre" checked>Hombre<br>
+			<input type="radio" id="sexo" name="Sexo" value="hombre">Mujer<br>
+			<input type="radio" id="sexo" name="Sexo" value="hombre">Otro<br>
+			<br>
+			<label>Fecha de cumpleaños</label>
+			<input type="date" name="fecha">
+			<input type="datetime-local" name="fecha">
+			<br><br>
+			<label>Correo electrónico</label>
+			<input type="email" name="email" placeholder="corrreo@mail.com" required="">
+			<br><br>
+			<label>Tu sitio web:</label>
+			<input type="url" name="url" placeholder="http://tudominio.com" required="">
+			<br><br>
+			<label>Cuánto sabes de HTML:</label>
+			<input type="range" name="puntaje" min="0" max="10">
+			<br><br>
+			<label>Personas que vienen contigo:</label>
+			<input type="number" name="cantidad" min="0" max="5">
+		</fieldset>
+		<br>
+		<br>
+		<fieldset>
+			<legend>Información sobre tu curso</legend>
+			<br>
+
+			<label for="turno">Turno:</label>
+			<select class="turno" id="turno" name="turno">
+				<option value="matutino">Matutino</option>
+				<option value="vespertino" selected="">Vespertino</option>
+				<option value="nocturno">Nocturno</option>
+			</select>
+			<br><br>
+			<label>Que te gustaría que agregaramos?</label>
+			<input list="propuesta" name="encuesta">
+			<datalist id="propuesta" autocomplete="off">
+				<option value="jquery"></option>
+				<option value="Aplicaciones web"></option>
+				<option value="AngularJS"></option>
+				<option value="BoosTrap"></option>
+			</datalist>
+			<br><br>
+			<label>Elige tus cursos:</label><br>
+			<input type="checkbox" value="PHP" name="">PHP<br>
+			<input type="checkbox" value="CSS" name="">CSS<br>
+			<input type="checkbox" value="MYSQL" name="">MYSQL<br>
+			<input type="checkbox" value="JavaScript" name="">JavaScript<br>
+			<input type="checkbox" value="HTML5" name="">HTML5<br>
+			<input type="checkbox" value="JQuery" name="">JQuery<br>
+			<br>
+			<label>Fecha que deseas iniciar el curso</label>
+			<input type="month" name="fecha">
+			<input type="time" name="fecha">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Extra</legend>
+			<label>Las primeras 10 personas reciben unca camisa gratis, elige el color:</label>
+			<input type="color" name="color">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Usuario y Password</legend>
+			<label>Usuario:</label><br>
+			<input type="text" name="usuario" placeholder="Usario" required="">
+			<br>
+			<label>Password:</label><br>
+			<input type="password" name="password" placeholder="Password" required="">
+		</fieldset>
+		<button type="reset" disabled="">Limpiar</button>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
