@@ -2,17 +2,33 @@
   Comentarios
 */
 
-h2{
-	color: white;
-	text-transform: uppercase;
-	background-color: red;
-	padding: 20px
-}
-
 #titulo{
-
+	color: blue;
 }
 
-.contenido-principal{
+#logo{
+	margin-top: 200px;
+}
 
+/* Selectores de clases */
+
+.rojo{
+	color: red;
+}
+
+.rojo{
+	color: blue;
+}
+
+/* Selectores con clase y ID */
+
+#titulo.titulo{
+	font-size: 60px;
+}
+/* css le da prioridad al que tenga más "peso" */
+.titulo{
+	font-size: 20px;
+}
+.azul.tituloCurso{
+	color: blue;
 }

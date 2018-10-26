@@ -11,9 +11,9 @@
 	<div class="contenedor">
 		<header role="banner">
 			<div class="logo">
-				<img src="img/logo.png" alt="logo empresa">
+				<img id="logo" src="img/logo.png" alt="logo empresa">
 			</div>
-			<nav class="navegacion" role="navigation">
+			<nav id="navegacion" class="navegacion" role="navigation">
 				<ul>
 					<li><a href="nosotros.html">Sobre nosotros</a></li>
 					<li><a href="#">Cursos</a></li>
@@ -23,13 +23,12 @@
 			</nav>
 		</header>
 		<main class="contenido-principal" role="main">
-			<section>
-				<h2>Nuestros cursos</h2>
+			<section id="introduccion" class="seccion">
+				<h2 id="titulo" class="titulo">Aprendiendo HTML5 y CSS</h2>
 				<div>
-					<h3>HTML5</h3>
 					<img src="img/html5.png" height="200">
 					<a href="programa-html5.pdf" download="">Descarga programa</a>
-					<p>Ventajas de este curso</p>
+					<p class="rojo">Ventajas de este curso</p>
 					<ul>
 						<li>Lo puedes tomar en línea
 							<ul>
@@ -40,7 +39,7 @@
 						<li>Avanzar a tu ritmo</li>
 						<li>Puedes preguntar tus dudas al instructor</li>
 					</ul>
-					<p>Temario del curso</p>
+					<p class="rojo">Temario del curso</p>
 					<ol>
 						<li>Listas
 							<ol>
@@ -51,7 +50,7 @@
 						<li>Header</li>
 						<li>Footer</li>
 					</ol>
-					<p>Lo que debes aprender par ser desarrollador web:</p>
+					<p class="rojo">Lo que debes aprender par ser desarrollador web:</p>
 					<dt>HTML</dt>
 					<dd>Agrega estructura a tus desarrollos</dd>
 					<dt>CSS</dt>
@@ -77,7 +76,7 @@
 			</section>
 		</main>
 		<aside role="complementary">
-			<h2>Próximos cursos</h2>
+			<h2 class="azul tituloCurso">Próximos cursos</h2>
 			<table width="300">
 				<caption><h2>Próximos cursos</h2></caption>
 				<thead>
