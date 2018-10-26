@@ -7,7 +7,7 @@
 }
 
 #logo{
-	margin-top: 200px;
+	margin-top: 20px;
 }
 
 /* Selectores de clases */
@@ -31,4 +31,108 @@
 }
 .azul.tituloCurso{
 	color: blue;
+}
+
+/* Selectores con elementos HTML */
+
+p{
+	color: brown;
+}
+h1{
+	color: orange;
+}
+h2{
+	color: green;
+}
+
+/* Selectores con elementos HTML y ID*/
+img#logo{
+	width: 600px
+}
+h2#titulo{
+	color: orange;
+}
+
+/* Selectores con elementos HTML y Class */
+section.seccion{
+	background: grey;
+}
+
+/* Selector universal */
+/*
+*{
+	color: red!important;
+	font-size: 20px!important;
+}
+*/
+#listado-cursos *{
+	font-size: 30px;
+}
+.noticia h3{
+	font-size: 20px;
+}
+.noticia h3{
+	font-size: 20px;
+}
+.noticia p{
+	font-size: 10px;
+}
+/* Seleccionando grupos */
+h2, h3, p, a{
+	text-transform: uppercase;
+}
+h2, h3{
+	text-align: center;
+}
+/* Seleccioar descendientes */
+nav#navegacion{
+	background-color: orange;
+}
+nav#navegacion ul{
+	list-style: none;
+}
+nav#navegacion ul li{
+	display: inline;
+}
+nav#navegacion ul li a{
+	color: white;
+}
+/* Selector de hijos */
+section#introduccion > ul{
+	border: 1px solid black;
+}
+section#introduccion li ul > li{
+	color: green;
+}
+/* Selector con elementos adyacentes */
+ul#listado-cursos + p{
+	background-color: red!important;
+	color: white;
+}
+/* Selector para enlaces */
+a[href*="google.com"]{
+	background-color: purple; 
+}
+
+/* Selectores de atributos */
+img[id="logo"]{
+	margin-top: 0px;
+}
+div.menu nav ul li:nth-child(1){
+	background-color: red;
+}
+div.menu nav ul li:nth-child(2){
+	background-color: yellow;
+}
+div.menu nav ul li:nth-child(3){
+	background-color: blue;
+}
+div.menu nav ul li:nth-child(4){
+	background-color: orange;
+}
+div.menu nav ul li:nth-child(odd){
+	background-color: orange;
+}
+div.menu nav ul li:nth-child(even){
+	background-color: purple;
 }

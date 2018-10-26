@@ -1,128 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="Explorando y aprendindo HTML">
-	<title>Mi primera página web</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
-<body>
-	<div class="contenedor">
-		<header role="banner">
-			<div class="logo">
-				<img id="logo" src="img/logo.png" alt="logo empresa">
-			</div>
-			<nav id="navegacion" class="navegacion" role="navigation">
-				<ul>
-					<li><a href="nosotros.html">Sobre nosotros</a></li>
-					<li><a href="#">Cursos</a></li>
-					<li><a href="https://google.com" target="_blank">Ir a Google</a></li>
-					<li><a href="#noticias">Ir a noticias</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="contenido-principal" role="main">
-			<section id="introduccion" class="seccion">
-				<h2 id="titulo" class="titulo">Aprendiendo HTML5 y CSS</h2>
-				<div>
-					<img src="img/html5.png" height="200">
-					<a href="programa-html5.pdf" download="">Descarga programa</a>
-					<p class="rojo">Ventajas de este curso</p>
-					<ul>
-						<li>Lo puedes tomar en línea
-							<ul>
-								<li>En udemy</li>
-								<li>En otros</li>
-							</ul>
-						</li>
-						<li>Avanzar a tu ritmo</li>
-						<li>Puedes preguntar tus dudas al instructor</li>
-					</ul>
-					<p class="rojo">Temario del curso</p>
-					<ol>
-						<li>Listas
-							<ol>
-								<li>No ordenadas</li>
-								<li>Ordenadas</li>
-							</ol>
-						</li>
-						<li>Header</li>
-						<li>Footer</li>
-					</ol>
-					<p class="rojo">Lo que debes aprender par ser desarrollador web:</p>
-					<dt>HTML</dt>
-					<dd>Agrega estructura a tus desarrollos</dd>
-					<dt>CSS</dt>
-					<dd>Agrega presentación a tus desarrollos</dd>
-					<dt>JavaScript</dt>
-					<dd>Agrega inteligencia a tus desarrollos</dd>
-				</div>
-				<div>
-					<h3>CSS3</h3>
-					<img src="img/css3.png" height="200">					
-				</div>
-				<div>
-					<h3>JavaScript</h3>
-					<img src="img/js.jpg" height="200">
-				</div>
-			</section>
-			<section id="noticias">
-				<h2>Últimas noticias</h2>
-				<article>
-					<h3>Aprender a programar en el siglo 21 es muy importante</h3>
-					<p>Etiam commodo, tortor a dapibus gravida, arcu enim volutpat eros, eget volutpat nulla lacus ut odio. Sed in ex vel nibh suscipit luctus id blandit nisi. Cras convallis congue dui sit amet finibus. Fusce hendrerit dolor at felis vestibulum, at egestas ligula molestie. Morbi vitae dui eros. Curabitur eget ante vitae velit mollis tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ullamcorper turpis, at condimentum nibh. Proin consequat maximus accumsan. Curabitur sodales tempor nisl lobortis imperdiet. Pellentesque pulvinar sodales enim eu efficitur. Cras sit amet sapien dolor. Morbi ac ipsum vel quam facilisis tristique.</p>
-				</article>
-			</section>
-		</main>
-		<aside role="complementary">
-			<h2 class="azul tituloCurso">Próximos cursos</h2>
-			<table width="300">
-				<caption><h2>Próximos cursos</h2></caption>
-				<thead>
-					<tr>
-						<th>Curso</th>
-						<th>Precio</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td rowspan="3">Python</td>
-						<td>150</td>
-					</tr>
-					<tr>
-						
-						<td>150</td>
-					</tr>
-					<tr>
-						
-						<td>150</td>
-					</tr>
-					<tr>
-						<td>Ruby</td>
-						<td>200</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td>No te los puedes perder</td>
-					</tr>
-				</tfoot>
-			</table>
-		</aside>
-	</div>
+  <head>
+    <meta charset="utf-8">
+    <title>Cursos de Diseño Web - CSS</title>
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/estilos.css" >
+  </head>
+  <body>
 
-	<footer role="contentinfo">
-		<div class="nosotros">
-			<h3>Sobre nuestra escuela</h3>
-			<p>Etiam commodo, tortor a dapibus gravida, arcu enim volutpat eros, eget volutpat nulla lacus ut odio. Sed in ex vel nibh suscipit luctus id blandit nisi. Cras convallis congue dui sit amet finibus. Fusce hendrerit dolor at felis vestibulum, at egestas ligula molestie. Morbi vitae dui eros. Curabitur eget ante vitae velit mollis tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ullamcorper turpis, at condimentum nibh. Proin consequat maximus accumsan. Curabitur sodales tempor nisl lobortis imperdiet. Pellentesque pulvinar sodales enim eu efficitur. Cras sit amet sapien dolor. Morbi ac ipsum vel quam facilisis tristique.</p>
-		</div>
-		<div class="menu">
-			<nav class="navegacion" role="navigation">
-				menú aquí
-			</nav>
-		</div>
-		<p>Cursos de diseño web &mdash; Todos los derechos reservados &copy;</p>
-	</footer>
-</body>
+    <div class="contenedor">
+          <header>
+              <div class="logo-contenedor">
+                  <img src="img/logo.png" class="logo">
+              </div>
+          </header>
+
+          <nav id="navegacion">
+            	<ul>
+            		<li><a href="#">Inicio</a></li>
+            		<li><a href="#">Nosotros</a></li>
+            		<li><a href="#">Cursos</a></li>
+            		<li><a href="#">Contacto</a></li>
+            	</ul>
+          </nav>
+
+          <main class="contenido-principal">
+                <section id="introduccion" class="seccion">
+                    <h2 id="titulo">Aprendiendo HTML5 y CSS</h2>
+                    <img src="img/css3.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p><span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </section>
+
+                <section id="cursos" class="seccion">
+                    <h2>Nuestros Cursos</h2>
+                      <ul id="listado-cursos">
+                          <li>Diseño Web
+                                <ul>
+                                  <li>CSS3</li>
+                                  <li>HTML5</li>
+                                  <li>JavaScript</li>
+                                </ul>
+                          </li>
+                          <li>Python</li>
+                          <li>PHP</li>
+                          <li>MySQL</li>
+                      </ul>
+                      <p>No te quedes fuera</p>
+                    <a href="#" id="btnCursos" class="button cursos">Ver todos los cursos</a>
+                </section>
+
+                <section id="noticias" class="seccion">
+                    <h2>Ultimas Noticias</h2>
+                    <div class="noticia">
+                          <h3>Aprender a programar es necesario en el siglo 21</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                    </div>
+                    <div class="noticia">
+                          <h3>Aprender a programar es necesario en el siglo 21</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          </p>
+                    </div>
+                    <a href="http://www.google.com.mx" class="button noticias">Ver todas las noticias</a>
+                </section>
+            </main> <!--main-->
+
+            <aside class="">
+                <h3>Próximos Cursos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Curso</th>
+                          <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>PHP</td>
+                          <td>10/10/2017</td>
+                        </tr>
+                        <tr>
+                          <td>MySQL</td>
+                          <td>18/10/2017</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript</td>
+                          <td>18/10/2017</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+    </div> <!--.contenedor-->
+
+    <footer role="contentinfo" >
+        <div class="nosotros">
+            <h3>Sobre nuestra escuela</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+          <div class="menu">
+              <nav>
+                	<ul>
+                		<li><a href="#">Inicio</a></li>
+                		<li><a href="#">Nosotros</a></li>
+                		<li><a href="#">Cursos</a></li>
+                		<li><a href="#">Contacto</a></li>
+                	</ul>
+              </nav>
+          </div>
+        <p id="textoFooter">Cursos diseño web &mdash; Todos los derechos reservados &copy; </p>
+    </footer>
+  </body>
 </html>
